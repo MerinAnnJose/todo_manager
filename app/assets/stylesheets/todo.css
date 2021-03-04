@@ -1,0 +1,96 @@
+body{
+    font-family: sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+.TodoTitle{
+    font-size: 40px;
+    font-weight: bold;
+    color: #0b016b;
+    margin-bottom: 20px;
+}
+
+.AddNewTodo{
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.InputText{
+    height: 28px;
+    width: 200px;
+    border-radius: 20px;
+    border: 2px solid #0314b3;
+    padding: 5px;
+}
+.InputDate{
+    height: 30px;
+    width: 200px;
+    border-radius: 20px;
+    border: 2px solid #0314b3;
+    padding: 5px;
+}
+.AddButton{
+    font-weight: bold;
+    font-size: 15px;
+    height: 50px;
+    width: 70px;
+    border-radius: 20px;
+    background-color: #4CAF50;
+    border: 2px solid #4CAF50;
+    padding: 5px;
+}
+.AddButton:hover{
+    /*background-color: #0014c9;*/
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+.TodoSection{
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.TodoSectionTitle{
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 10px;
+}
+.TodoSectionTitle-text{
+    font-size: 25px;
+    font-weight: bold;
+    color: #0a0347;
+    margin-right: 10px;
+}
+.TodoSectionTitle-remainingCount{
+    font-size: 15px;
+    color: #0a0347;
+}
+
+.TodoItem{
+    color: #0e027e;
+}
+.TodoItem-container{
+    display: flex;
+    padding: 5px;
+    align-items: center;
+}
+.TodoItem-checkbox{
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+}
+.TodoItem-text{
+    font-size: 20px;
+}
+.date_display{
+    margin-left: 20px;
+    font-size: 15px;
+}
+.TodoItem-delete{
+    margin-left: 15px;
+    height: 15px;
+    width: 15px;
+}

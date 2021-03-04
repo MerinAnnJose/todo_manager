@@ -1,0 +1,34 @@
+<head>
+    <title>Todos List</title>
+</head>
+<body>
+    <main class="TodoPageMain">
+        <h1 class="TodoTitle">My To-Do List</h1>
+        <section>
+            <div class="AddNewTodo">
+                <form method="POST">
+                    <input class="InputText" type="text" name="todo_text" placeholder="What's new?">
+                    <input class="InputDate" type="date" name="due_date">
+                    <button class="AddButton" type="submit">ADD</button>
+                </form>
+            </div>
+        </section>
+
+        <%= render partial: "todo-section", locals: {
+            section_title: "Overdue",
+            todos: Todo.overdue,
+            date_display: true
+        } %>
+        <%= render partial: "todo-section", locals: {
+            section_title: "Due Today",
+            todos: Todo.duetoday,
+            date_display: false
+        } %>
+        <%= render partial: "todo-section", locals: {
+            section_title: "Due Later",
+            todos: Todo.duelater,
+            date_display: true
+        } %>
+        
+    </main>
+</body>
